@@ -1,4 +1,4 @@
-# MagicCFG
+# MagicCFG Windows Version
 
 Short summary:
 
