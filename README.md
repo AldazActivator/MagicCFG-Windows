@@ -2,6 +2,8 @@
 
 Short summary:
 
+**Source Code Based on the Macbook developer j4nf4b3, which is in Swift, I only adapted the code to Windows and added what was necessary to make it work**
+
 Simple SysCFG Editor written in C#.
 Pure C#.
 Just the editor.
