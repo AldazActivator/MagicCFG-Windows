@@ -131,7 +131,7 @@ namespace MagicCFG
 
         public bool Support() 
         {
-            string filePath = $".\\resources\\diags\\{iOSDevice.ProductType}.CFG"; // Ruta del archivo que deseas verificar
+            string filePath = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "resources", "diags", $"{iOSDevice.ProductType}.CFG");
 
             if (File.Exists(filePath))
             {

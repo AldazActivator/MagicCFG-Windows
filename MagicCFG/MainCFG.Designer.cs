@@ -2870,7 +2870,7 @@ namespace MagicCFG
 
         private SerialPort serialPort = new SerialPort();
         private string string_19;
-        public static string string_0 = Directory.GetCurrentDirectory();
+        public static string string_0 = AppDomain.CurrentDomain.BaseDirectory;
         public static string string_6;
         public static string string_7;
         public static string string_8;

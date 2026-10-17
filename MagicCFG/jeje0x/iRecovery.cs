@@ -8,6 +8,7 @@
 using System;
 using System.Collections.Generic;
 using System.Diagnostics;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading;
@@ -24,7 +25,7 @@ namespace MagicCFG
 
             Process ideviceinfo = new Process();
 
-            ideviceinfo.StartInfo.FileName = Environment.CurrentDirectory + "/resources/import/irecovery.exe";
+            ideviceinfo.StartInfo.FileName = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "resources", "import", "irecovery.exe");
 
             ideviceinfo.StartInfo.Arguments = "-q";
 
@@ -155,7 +156,7 @@ namespace MagicCFG
 
                 Process process = new Process();
 
-                process.StartInfo.FileName = $".\\resources\\import\\irecovery.exe";
+                process.StartInfo.FileName = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "resources", "import", "irecovery.exe");
 
                 process.StartInfo.Arguments = $"{arg} {rmdisk} -v";
 

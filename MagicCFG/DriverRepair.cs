@@ -26,18 +26,18 @@ namespace MagicCFG
         public static string string_11;
         private string string_12 = "";
         private string string_13 = "";
-        public static string string_0_2 = Directory.GetCurrentDirectory();
-        public static string string_0 = Directory.GetCurrentDirectory();
-        public static string f000001 = string_0_2 + "\\resources\\lib\\";
+        public static string string_0_2 = AppDomain.CurrentDomain.BaseDirectory;
+        public static string string_0 = AppDomain.CurrentDomain.BaseDirectory;
+        public static string f000001 = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "resources", "lib");
         public static string string_4 = "";
-        public static string string_5 = Environment.CurrentDirectory + "\\resources\\lib";
+        public static string string_5 = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "resources", "lib");
         public static string string_6_ = "null";
         public static string string_7_ = "null";
         public static string string_8_ = "null";
         public static string string_9 = "null";
         public static string string_10 = "";
         public static string string_14_2 = "";
-        public static string string_15_2 = string_0 + "\\resources\\drivers\\usb\\";
+        public static string string_15_2 = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "resources", "drivers", "usb");
         public static string string_16_ = "C:\\Windows\\System32\\DriverStore\\FileRepository\\usbser.inf_amd64_8de53ed035d71856\\";
         public static string string_18_ = ":-)";
         public void DSCD()
